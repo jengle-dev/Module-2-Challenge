@@ -1,0 +1,103 @@
+/* Set var in root */
+:root {
+    --bkgdcolor: #bab19c;
+    --logocenter: #412354;
+    --logochoc: #402312;
+    --logorasp: #9e1460;
+    --darkberry: #51082f;
+}
+
+/* if there's a selection, such as click or highlight put in a ::selection */
+::selection {
+    color: black;
+    background-color: goldenrod;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: var(--logochoc);
+    background-color: var(--bkgdcolor);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .625rem;
+    color: var(--logocenter);
+    line-height: 1.1;
+}
+
+h1 {
+    margin-bottom: .825rem;
+    color: var(--logocenter);
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: 4rem;
+}
+
+h2 {
+    margin-bottom: .625rem;
+    color: var(--logochoc);
+    font-weight: bold;
+    line-height: 1.25;
+    font-size: 2.75rem;
+}
+
+h3 {
+    margin-bottom: .625rem;
+    color: var(--darkberry);
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 2.25rem;
+}
+
+header {
+    width: 96%;
+    margin: 1 auto;
+    padding: 2.5rem;
+    text-align: left;
+}
+
+header h1.page-title {
+    font: 4.25rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.column {
+    flex: 1 0 100%;
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+h3:section-header {
+    display: flex;
+    flex-direction: row;
+}
+/* flex needs @media */
+@media screen and (min-width: 768px) {
+    .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;    
+    }
+}
