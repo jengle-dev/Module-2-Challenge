@@ -111,6 +111,22 @@ h3:section-header {
     padding-left: 1rem;
 }
 
+/* Form Input fields -- don't forget to create a "submit" or "send" button */
+#form1 {
+
+}
+
+#form2 {
+
+}
+
+#name {
+
+}
+
+#message {
+
+}
 
 /* flex needs @media */
 @media screen and (min-width: 768px) {
