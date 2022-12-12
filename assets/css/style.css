@@ -25,10 +25,18 @@ body {
     background-color: var(--bkgdcolor);
 }
 
+p { 
+    color: var(--logochoc);
+    font-size: 1.75rem;
+    line-height: 1.85rem;
+    margin: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .625rem;
     color: var(--logocenter);
     line-height: 1.1;
+    margin-left: 1.1rem;
 }
 
 h1 {
@@ -55,6 +63,14 @@ h3 {
     font-size: 2.25rem;
 }
 
+h4 {
+    margin-bottom: .625rem;
+    color:var(--logorasp);
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 2.1rem;
+}
+
 header {
     width: 96%;
     margin: 1 auto;
@@ -66,15 +82,16 @@ header h1.page-title {
     font: 4.25rem;
 }
 
-.row {
+.column {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    gap: 3.5rem;
 }
 
-.column {
+.row {
     flex: 1 0 100%;
     padding-left: 1.75rem;
     margin-bottom: 1.5rem;
@@ -86,8 +103,15 @@ header h1.page-title {
 
 h3:section-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
+
+.textbox {
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+
 /* flex needs @media */
 @media screen and (min-width: 768px) {
     .column {
