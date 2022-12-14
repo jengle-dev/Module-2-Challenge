@@ -15,6 +15,7 @@
 
 html {
     font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -29,7 +30,7 @@ p {
     color: var(--logochoc);
     font-size: 1.75rem;
     line-height: 1.85rem;
-    margin: 1rem;
+    margin: 1.1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,11 +83,18 @@ header h1.page-title {
     font: 4.25rem;
 }
 
+.logo{
+    max-height: 110px;
+    /* background-image: url("..assets\logo\Logo_Jennifer_Engle_image_only.png"); */
+    background-size: 35%;
+    background-position: right;
+}
+
 .column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
     margin-right: 2.5rem;
     gap: 3.5rem;
 }
@@ -109,23 +117,6 @@ h3:section-header {
 .textbox {
     line-height: 1.5;
     padding-left: 1rem;
-}
-
-/* Form Input fields -- don't forget to create a "submit" or "send" button */
-#form1 {
-
-}
-
-#form2 {
-
-}
-
-#name {
-
-}
-
-#message {
-
 }
 
 /* flex needs @media */
