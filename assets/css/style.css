@@ -5,6 +5,7 @@
     --logochoc: #402312;
     --logorasp: #9e1460;
     --darkberry: #51082f;
+    flex: 2 1 auto;
 }
 
 /* if there's a selection, such as click or highlight put in a ::selection */
@@ -15,16 +16,16 @@
 
 html {
     font-size: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     color: var(--logochoc);
     background-color: var(--bkgdcolor);
 }
+
 
 p { 
     color: var(--logochoc);
@@ -45,7 +46,7 @@ h1 {
     color: var(--logocenter);
     font-weight: bolder;
     line-height: 1.5;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -67,27 +68,8 @@ h3 {
 h4 {
     margin-bottom: .625rem;
     color:var(--logorasp);
-    font-weight: bold;
     line-height: 1.1;
-    font-size: 2.1rem;
-}
-
-header {
-    width: 96%;
-    margin: 1 auto;
-    padding: 2.5rem;
-    text-align: left;
-}
-
-header h1.page-title {
-    font: 4.25rem;
-}
-
-.logo{
-    max-height: 110px;
-    /* background-image: url("..assets\logo\Logo_Jennifer_Engle_image_only.png"); */
-    background-size: 35%;
-    background-position: right;
+    font-size: 2.0rem;
 }
 
 .column {
@@ -99,9 +81,31 @@ header h1.page-title {
     gap: 3.5rem;
 }
 
+ul li{
+    display: inline-flex;
+    margin: auto auto;
+}
+
+header {
+    width: 96%;
+    margin: 1 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+header h1.page-title {
+    font: 3.25rem;
+}
+
+.logo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    width: 35%;
+}
+
 .row {
     flex: 1 0 100%;
-    padding-left: 1.75rem;
     margin-bottom: 1.5rem;
 }
 
@@ -109,21 +113,35 @@ header h1.page-title {
     justify-content: left;
 }
 
-h3:section-header {
+/* h3:section-header {
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: row;
+} */
 
 .textbox {
     line-height: 1.5;
     padding-left: 1rem;
+}
+.textbox li{
+    line-height: 1.5;
+    display: block;
+}
+
+footer {
+    width: 75%;
+    margin: 1 auto;
+    padding: 2.5rem;
+    text-align: center;
 }
 
 /* flex needs @media */
 @media screen and (min-width: 768px) {
     .column {
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 80%;
+        padding: 1.5rem;
+        transition: linear;
+        margin-bottom: 2.5rem;
     }
 }
 
