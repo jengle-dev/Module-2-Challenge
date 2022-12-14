@@ -97,6 +97,20 @@ header h1.page-title {
     font: 3.25rem;
 }
 
+header navigation {
+    padding-top: 20px;
+    margin-right: 25px;
+    float: right;
+    font-size: 2.25rem;
+}
+
+/* hero is same as background/header img */
+.hero {
+    height: 500px;
+    width: auto;
+    margin-bottom: 25px;
+    background-image: url("..assets/images/hero_header.png");
+}
 .logo{
     margin-top: 2rem;
     margin-bottom: 2rem;
